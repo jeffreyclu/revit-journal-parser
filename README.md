@@ -1,384 +1,125 @@
 
-  
-Welcome file
-
-# Welcome to StackEdit!  
-  
-
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.  
-  
-  
-
-# Files  
-  
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**  
-  
-
-## Create files and folders  
-  
-
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.  
-  
-
-## Switch to another file  
-  
-
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.  
-  
-
-## Rename a file  
-  
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.  
-  
-
-## Delete a file  
-  
-
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.  
-  
-
-## Export a file  
-  
-
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.  
-  
-  
-
-# Synchronization  
-  
-
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.  
-  
-
-There are two types of synchronization and they can complement each other:  
-  
-
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.  
- > To start syncing your workspace, just sign in with Google in the menu.  
-  
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.  
- > Before starting to sync files, you must link an account in the **Synchronize** sub-menu.  
-  
-
-## Open a file  
-  
-
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.  
-  
-
-## Save a file  
-  
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.  
-  
-
-## Synchronize a file  
-  
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.  
-  
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.  
-  
-
->  **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.  
-  
-
-## Manage file synchronization  
-  
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.  
-  
-  
-
-# Publication  
-  
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.  
-  
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.  
-  
-
-## Publish a File  
-  
-
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:  
-  
-
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),  
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).  
-  
-
-## Update a publication  
-  
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.  
-  
-
->  **Note:** The **Publish now** button is disabled if your file has not been published yet.  
-  
-
-## Manage file publication  
-  
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.  
-  
-  
-
-# Markdown extensions  
-  
-
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.  
-  
-
->  **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.  
-  
-  
-
-## SmartyPants  
-  
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:  
-  
-
-|  |ASCII |HTML |  
-|----------------|-------------------------------|-----------------------------|  
-|Single backticks|`'Isn't this fun?'`  |'Isn't this fun?' |  
-|Quotes |`"Isn't this fun?"`  |"Isn't this fun?" |  
-|Dashes |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|  
-  
-  
-
-## KaTeX  
-  
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):  
-  
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral  
-  
-
-$$  
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.  
-$$  
-  
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).  
-  
-  
-
-## UML diagrams  
-  
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:  
-  
-
-```mermaid  
-sequenceDiagram  
-Alice ->> Bob: Hello Bob, how are you?  
-Bob-->>John: How about you John?  
-Bob--x Alice: I am good thanks!  
-Bob-x John: I am good thanks!  
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.  
-  
-Bob-->Alice: Checking with John...  
-Alice->John: Yes... John, how are you?  
-```  
-  
-
-And this will produce a flow chart:  
-  
-
-```mermaid  
-graph LR  
-A[Square Rect] -- Link text --> B((Circle))  
-A --> C(Round Rect)  
-B --> D{Rhombus}  
-C --> D  
-```  
-
-# Welcome to StackEdit!
-
-Hi! I’m your first Markdown file in  **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the  **file explorer**  on the left corner of the navigation bar.
-
-# Files
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible  **offline!**
-
-## Create files and folders
-
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the  **New file**  button in the file explorer. You can also create folders by clicking the  **New folder**  button.
-
-## Switch to another file
-
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
-
-## Rename a file
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the  **Rename**  button in the file explorer.
-
-## Delete a file
-
-You can delete the current file by clicking the  **Remove**  button in the file explorer. The file will be moved into the  **Trash**  folder and automatically deleted after 7 days of inactivity.
-
-## Export a file
-
-You can export the current file by clicking  **Export to disk**  in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
-
-# Synchronization
-
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your  **Google Drive**, your  **Dropbox**  and your  **GitHub**  accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow… The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
-
-There are two types of synchronization and they can complement each other:
-
--   The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
+# Journal Parser
+
+Current Version: 2.0
+Date: 8/20/2019
+Creator: Jeffrey Lu
+
+For queries, assistance, or bug reporting, please email: j.lu@perkinseastman.com
+
+## Introduction
+
+Journal Parser is a tool that collects journal files from a chosen directory, and allows you to query individual journal files for a "human-readable" output. Both basic information such as the user's Revit version and session time, and more advanced information such as usage statistics can be queried.
+
+## Prerequisites
+
+Journal Parser and Journal Collector have been tested for use in Python 3.7.4 and a Windows 10 Enterprise environment. If you do not have Python 3.7.4, [download the latest version here](https://www.python.org/downloads/release/python-382/).
+
+# Usage
+## Local Connections
+### Open Local Directory
+
+ 1. Select `Open Local Directory` to go directly to the Revit journal
+    directory for the current user. This is equivalent to navigating to
+    `%localappdata%\autodesk\revit\`
+ 2. Open the folder corresponding to the Revit Version you wish to
+    investigate.
+ 3. Sort the list of files by Date Modified to see the most recent
+    journals at the top. Note that only `.txt` files are displayed.
+ 4. Select a journal to investigate and click `Open`. If it is a valid
+    journal file, it will be automatically parsed.
+> Note that journals with large file sizes will take longer to open. Be patient.
+
+### Open Last Journal Directory
+Once a journal file has been queried, you may use the `Open Last Journal Directory` function to quickly access the last visited folder.
+
+## Remote Connections
+### New Remote Connection
+
+ 1. Select the `New Remote Connection` function to initiate a new remote
+    connection.
+ 2. In the login window, enter the user's computer ID and login ID.
+
+>Note: use the PE PC Manager tool to quickly retrieve computer IDs. 
+>Contact Cesar Rosales (c.rosales@perkinseastman.com) for more information.
+3. Open the folder corresponding to the Revit Version you wish to
+    investigate.
+4. Sort the list of files by Date Modified to see the most recent
+    journals at the top. Note that only `.txt` files are displayed.
+5. Select a journal to investigate and click `Open`. If it is a valid
+    journal file, it will be automatically parsed.
     
-    > To start syncing your workspace, just sign in with Google in the menu.
+### Last Remote Connection
+Once a remote connection has been established, you may use the `Last Remote Connection` function to quickly access the last visited remote connection.
+
+### Remote Connections Log
+The `Remote Connections Log` function will display all the previously made remote connections for quick access. Select one from the list and click `Open Selected Connection` to re-open it. Choose `Clear Logs` to empty the list.
+
+## Archive of Journal Files
+Journal Parser automatically makes a copy of *any* accessed journals - both local and remote - for quick access. These are all saved in `C:\Logs\journals`. Use the `Open Local Copy of Journal` function to access the archive folder.
+
+# Features
+To be completed.# Journal Parser
+
+Current Version: 2.0
+Date: 8/20/2019
+Creator: Jeffrey Lu
+
+For queries, assistance, or bug reporting, please email: j.lu@perkinseastman.com
+
+## Introduction
+
+Journal Parser is a tool that collects journal files from a chosen directory, and allows you to query individual journal files for a "human-readable" output. Both basic information such as the user's Revit version and session time, and more advanced information such as usage statistics can be queried.
+
+## Prerequisites
+
+Journal Parser and Journal Collector have been tested for use in Python 3.7.4 and a Windows 10 Enterprise environment. If you do not have Python 3.7.4, [download the latest version here](https://www.python.org/downloads/release/python-382/).
+
+# Usage
+## Local Connections
+### Open Local Directory
+
+ 1. Select `Open Local Directory` to go directly to the Revit journal
+    directory for the current user. This is equivalent to navigating to
+    `%localappdata%\autodesk\revit\`
+ 2. Open the folder corresponding to the Revit Version you wish to
+    investigate.
+ 3. Sort the list of files by Date Modified to see the most recent
+    journals at the top. Note that only `.txt` files are displayed.
+ 4. Select a journal to investigate and click `Open`. If it is a valid
+    journal file, it will be automatically parsed.
+> Note that journals with large file sizes will take longer to open. Be patient.
+
+### Open Last Journal Directory
+Once a journal file has been queried, you may use the `Open Last Journal Directory` function to quickly access the last visited folder.
+
+## Remote Connections
+### New Remote Connection
+
+ 1. Select the `New Remote Connection` function to initiate a new remote
+    connection.
+ 2. In the login window, enter the user's computer ID and login ID.
+
+>Note: use the PE PC Manager tool to quickly retrieve computer IDs. 
+>Contact Cesar Rosales (c.rosales@perkinseastman.com) for more information.
+3. Open the folder corresponding to the Revit Version you wish to
+    investigate.
+4. Sort the list of files by Date Modified to see the most recent
+    journals at the top. Note that only `.txt` files are displayed.
+5. Select a journal to investigate and click `Open`. If it is a valid
+    journal file, it will be automatically parsed.
     
--   The file synchronization will keep one file of the workspace synced with one or multiple files in  **Google Drive**,  **Dropbox**  or  **GitHub**.
-    
-    > Before starting to sync files, you must link an account in the  **Synchronize**  sub-menu.
-    
+### Last Remote Connection
+Once a remote connection has been established, you may use the `Last Remote Connection` function to quickly access the last visited remote connection.
 
-## Open a file
+### Remote Connections Log
+The `Remote Connections Log` function will display all the previously made remote connections for quick access. Select one from the list and click `Open Selected Connection` to re-open it. Choose `Clear Logs` to empty the list.
 
-You can open a file from  **Google Drive**,  **Dropbox**  or  **GitHub**  by opening the  **Synchronize**  sub-menu and clicking  **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
+## Archive of Journal Files
+Journal Parser automatically makes a copy of *any* accessed journals - both local and remote - for quick access. These are all saved in `C:\Logs\journals`. Use the `Open Local Copy of Journal` function to access the archive folder.
 
-## Save a file
-
-You can save any file of the workspace to  **Google Drive**,  **Dropbox**  or  **GitHub**  by opening the  **Synchronize**  sub-menu and clicking  **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-## Synchronize a file
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the  **Synchronize now**  button in the navigation bar.
-
-> **Note:**  The  **Synchronize now**  button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking  **File synchronization**  in the  **Synchronize**  sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-# Publication
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you’re happy with a file, you can publish it to different hosting platforms like  **Blogger**,  **Dropbox**,  **Gist**,  **GitHub**,  **Google Drive**,  **WordPress**  and  **Zendesk**. With  [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the  **Publish**  sub-menu.
-
-## Publish a File
-
-You can publish your file by opening the  **Publish**  sub-menu and by clicking  **Publish to**. For some locations, you can choose between the following formats:
-
--   Markdown: publish the Markdown text on a website that can interpret it (**GitHub**  for instance),
--   HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the  **Publish now**  button in the navigation bar.
-
-> **Note:**  The  **Publish now**  button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking  **File publication**  in the  **Publish**  sub-menu. This allows you to list and remove publication locations that are linked to your file.
-
-# Markdown extensions
-
-StackEdit extends the standard Markdown syntax by adding extra  **Markdown extensions**, providing you with some nice features.
-
-> **ProTip:**  You can disable any  **Markdown extension**  in the  **File properties**  dialog.
-
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into “smart” typographic punctuation HTML entities. For example:
-
-ASCII
-
-HTML
-
-Single backticks
-
-`'Isn't this fun?'`
-
-‘Isn’t this fun?’
-
-Quotes
-
-`"Isn't this fun?"`
-
-“Isn’t this fun?”
-
-Dashes
-
-`-- is en-dash, --- is em-dash`
-
-– is en-dash, — is em-dash
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using  [KaTeX](https://khan.github.io/KaTeX/):
-
-The  _Gamma function_  satisfying  \Gamma(n) = (n-1)!\quad\forall n\in\mathbb NΓ(n)=(n−1)!∀n∈N  is via the Euler integral
-
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.Γ(z)=∫0∞​tz−1e−tdt.
-
-> You can find more information about  **LaTeX**  mathematical expressions  [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-## UML diagrams
-
-You can render UML diagrams using  [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-AliceBobJohnHello Bob, how are you?How about you John?I am good thanks!I am good thanks!Bob thinks a longlong time, so longthat the text doesnot fit on a row.Checking with John...Yes... John, how are you?AliceBobJohn
-
-And this will produce a flow chart:
-
-Link text
-
-Square Rect
-
-Circle
-
-Round Rect
-
-Rhombus
-
-Markdown 7173  bytes 1086  words 143  lines Ln 1, Col 0
-
-HTML 5248  characters 1013  words 71  paragraphs
-
-WORKSPACES
-
-2
-
-Manage workspaces
-
-List, rename, remove workspaces
-
-----------
-
-[](https://stackedit.io/app)
-
-Main workspace
-
-[](https://stackedit.io/app#providerId=githubWorkspace&owner=jeffreyclu&repo=revit-journal-parser&branch=master)
-
-current
-
-revit-journal-parser
-
-----------
-
-Add a  **CouchDB**  workspace
-
-Add a  **GitHub**  workspace
-
-Add a  **GitLab**  workspace
-
-Add a  **Google Drive**  workspace
+# Features
+To be completed.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTg1OTM4OThdfQ==
+eyJoaXN0b3J5IjpbLTk1ODU0NzhdfQ==
 -->
