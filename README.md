@@ -2,7 +2,7 @@
 # Journal Parser
 
 Current Version: 2.0
-Date: 8/20/2019
+Date: 3/9/2020
 Creator: Jeffrey Lu
 
 For queries, assistance, or bug reporting, please email: j.lu@perkinseastman.com
@@ -121,5 +121,5 @@ Journal Parser automatically makes a copy of *any* accessed journals - both loca
 # Features
 To be completed.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODU0NzhdfQ==
+eyJoaXN0b3J5IjpbODQzMTc2NjQsLTk1ODU0NzhdfQ==
 -->
