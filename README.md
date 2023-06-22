@@ -1,4 +1,4 @@
-# Note: this repository is no longer being maintained.
+# 06/2023 Note: this repository is not being actively maintained besides Revit version updates.
 
 # Journal Parser
 
