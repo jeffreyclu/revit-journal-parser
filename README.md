@@ -1,3 +1,4 @@
+# Note: this repository is no longer being maintained.
 
 # Journal Parser
 
