@@ -1,4 +1,4 @@
-import os, tkinter, shutil, time, datetime, glob, fnmatch, csv, sys, getpass
+import os, tkinter, shutil, time, datetime, glob, fnmatch, csv, sys, getpass, re
 from tkinter import *
 from tkinter.ttk import *
 from tkinter.scrolledtext import *
@@ -54,8 +54,10 @@ class FileActions:
         self.username = "unknown"
         with open(journal, "r") as f:
             for line in f:
-                if '"Username"' in line:
-                    self.username = str(next(f).split('"')[1])
+                match = re.search(r'"Username"\s*,\s*"([^"]*)"', line)
+                if match:
+                    print(match.group(1))
+                    self.username = match.group(1)
 
         #make journal copy directory if it doesn't exist
         if not os.path.exists("C:\\Logs\\journals"):
