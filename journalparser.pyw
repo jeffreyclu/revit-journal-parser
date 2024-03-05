@@ -1,4 +1,4 @@
-import os, tkinter, shutil, time, datetime, glob, fnmatch, csv, sys, getpass
+import os, tkinter, shutil, time, datetime, glob, fnmatch, csv, sys, getpass, re
 from tkinter import *
 from tkinter.ttk import *
 from tkinter.scrolledtext import *
@@ -54,8 +54,10 @@ class FileActions:
         self.username = "unknown"
         with open(journal, "r") as f:
             for line in f:
-                if '"Username"' in line:
-                    self.username = str(next(f).split('"')[1])
+                match = re.search(r'"Username"\s*,\s*"([^"]*)"', line)
+                if match:
+                    print(match.group(1))
+                    self.username = match.group(1)
 
         #make journal copy directory if it doesn't exist
         if not os.path.exists("C:\\Logs\\journals"):
@@ -294,9 +296,9 @@ class RegularMenu(Menu):
 
         #set version definitions -- keep these up to date from list here: https://knowledge.autodesk.com/search-result/caas/sfdcarticles/sfdcarticles/How-to-tie-the-Build-number-with-the-Revit-update.html
         revitversions = {
-        "Version Name:": ["Autodesk Revit 2017", "Autodesk Revit 2018", "Autodesk Revit 2019", "Autodesk Revit 2020"],
-        "Build No:": ["20190508_0315(x64)", "20190510_1515(x64)", "20190225_1515(x64)", "20190725_1135(x64)"],
-        "Build Name:": ["2017.2.5", "2018.3.3", "2019.2.1", "2020.1"]
+        "Version Name:": ["Autodesk Revit 2017", "Autodesk Revit 2018", "Autodesk Revit 2019", "Autodesk Revit 2020", "Autodesk Revit 2021", "Autodesk Revit 2022", "Autodesk Revit 2023", "Autodesk Revit 2024"],
+        "Build No:": ["20190508_0315(x64)", "20190510_1515(x64)", "20190225_1515(x64)", "20190725_1135(x64)", "20230515_1515", "20230505_1515", "20230510_1100", "20230509_0315"],
+        "Build Name:": ["2017.2.5", "2018.3.3", "2019.2.1", "2020.1", "2021.1.8", "2022.1.4", "2023.1.2", "2024.0.2"]
         }
 
         #instantiate a fileaction class
